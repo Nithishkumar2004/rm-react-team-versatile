@@ -84,8 +84,8 @@ const RecipeComponent = (props) => {
           </table>
         </DialogContent>
         <DialogActions>
-          <SeeNewTab onClick={() => window.open(url)}>See More</SeeNewTab>
-          <SeeMoreText onClick={() => setShow("")}>Close</SeeMoreText>
+          <SeeNewTab onClick={() => window.open(url)} id="see_more_btn">See More</SeeNewTab>
+          <SeeMoreText onClick={() => setShow("")} id="close_btn">Close</SeeMoreText>
         </DialogActions>
       </Dialog>
       <CoverImage src={image} alt={label} />
